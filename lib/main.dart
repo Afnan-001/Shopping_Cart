@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shopping Cart',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 189, 90, 148),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
         primarySwatch: Colors.blue,
         appBarTheme: const AppBarTheme(
           centerTitle: true,

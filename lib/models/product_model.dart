@@ -17,6 +17,9 @@ class Product {
 
   double get discountedPrice => price * (1 - discountPercentage / 100);
 
+  double get originalPrice => discountedPrice / (1 - discountPercentage / 100);
+
+  // Factory constructor to create a Product instance from JSON
   factory Product.fromJson(Map<String, dynamic> json) {
     return Product(
       id: json['id'] as int? ?? 0, // Handle null int
